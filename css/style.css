@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://www.dimex-tapety.cz/files/images/sklady/Dimex_line/Vlies_2022/pic_1400px/MS-5-1808.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Kontejner pro formulář */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Bílá barva s průhledností */
+    color: #333;
+    border-radius: 15px; /* Zaoblené rohy */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2); /* 3D efekt */
+    padding: 30px 20px; /* Vnitřní mezery */
+    width: 350px; /* Šířka formuláře */
+    text-align: center; /* Zarovnání textu na střed */
+    backdrop-filter: blur(5px); /* Rozmazání pozadí pod formulářem (pro moderní vzhled) */
+    -webkit-backdrop-filter: blur(5px); /* Podpora pro Safari */
+    animation: fadeIn 1.5s ease-in-out; /* Animace pro zobrazení formuláře */
+}
+
+/* Fade-in animace */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9); /* Mírné zmenšení při startu */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Návrat do původní velikosti */
+    }
+}
+
+/* Nadpis */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: colorChange 5s infinite; /* Animace měnící barvy nadpisu */
+}
+
+/* Animace změny barvy nadpisu */
+@keyframes colorChange {
+    0% {
+        color: #2980b9;
+    }
+    33% {
+        color: #e74c3c;
+    }
+    66% {
+        color: #27ae60;
+    }
+    100% {
+        color: #2980b9;
+    }
+}
+
+/* Styl pro vstupní pole */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1); /* 3D efekt uvnitř */
+}
+
+/* Styl pro tlačítka */
+button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9); /* Tlačítka s přechodem */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lehké zvýšení */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Přidání hladkého přechodu */
+}
+
+/* Efekt při najetí myší na tlačítko */
+button:hover {
+    transform: scale(1.1); /* Zvětšení tlačítka */
+    background: linear-gradient(135deg, #2980b9, #6dd5fa); /* Obrácený přechod */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Zvětšení stínu */
+}
+
+/* Styl pro výsledek */
+h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
